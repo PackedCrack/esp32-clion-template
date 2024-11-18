@@ -1,0 +1,9 @@
+.idea
+build
+build-cppcheck
+cmake-build-debug
+cmake-build-debug-xtensa-esp32
+cmake-build-release-xtensa-esp32
+
+dependencies.lock
+sdkconfig
