@@ -13,12 +13,13 @@ If you don't have ESP-IDF installed see [Install ESP-IDF](#install-esp-idf)
 3. Name: Xtensa ESP32
 4. Add environment -> From file
 5. Environment file: \esp32-cpp-template\espidf_source.bat
-6. Settings -> Build, Execution, Deployment -> CMake
-7. Delete (Alt + Delete) all profiles.
-8. Add (Alt + Insert)
-9. Toolchain: XTensa ESP32
-10. (Optional) Repeat 8. and 9. for all the profiles you need.
-11. Apply -> OK
+6. Open \esp32-cpp-template\espidf_source.bat and insert the absoulte path to activate.bat and export.bat
+7. Settings -> Build, Execution, Deployment -> CMake
+8. Delete (Alt + Delete) all profiles.
+9. Add (Alt + Insert)
+10. Toolchain: XTensa ESP32
+11. (Optional) Repeat 8. and 9. for all the profiles you need.
+12. Apply -> OK
 
 ### Accessing idf.py menuconfig
 1. View -> Tool Windows -> Terminal (Alt + F12)
@@ -45,10 +46,10 @@ Don't forget to set the target:
 1. Configuration -> Edit
 2. Copy the 'flash' configuration by selecting it and clicking Copy Configuration (Ctrl + D)
 3. Name: flash_and_monitor
-4. Executable: C:\path\to\project\flash_and_monitor.bat
-5. Open C:\path\to\project\flash_and_monitor.bat and insert the absoulte path to idf.py
+4. Executable: \esp32-cpp-template\flash_and_monitor.bat
+5. Open \esp32-cpp-template\flash_and_monitor.bat and insert the absoulte path to idf.py
 6. Program arguments: monitor -p <COM PORT>
-7. Working directory: C:\path\to\project
+7. Working directory: \esp32-cpp-template\
 8. Environment variables: IDF_PATH=C:\path\to\esp-idf
 9. Check 'Emulate terminal in the output console'.
 10. Press the Play button to flash and monitor.
