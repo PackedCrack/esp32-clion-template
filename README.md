@@ -25,7 +25,7 @@ If you don't have ESP-IDF installed see [Install ESP-IDF](#install-esp-idf)
 2. `.\<esp-idf directory>\export.ps1`
 3. `python .\<esp-idf directory>\tools\idf.py menuconfig`
 
-If menuconfig is glitchy in powershell it can be run in the command prompt.
+If menuconfig is glitchy in powershell it can be run in the command prompt:
 1. New Predefined Session (It's an arrow pointing down next to Local in the Terminal window. It is **only** visible if you're mouse is hovering on the Terminal window.)
 2. Command Prompt
 3. `.\<esp-idf directory>\export.bat`
@@ -35,6 +35,23 @@ Don't forget to set the target:
 `idf.py set-target esp32`
 `idf.py set-target esp32-s2`
 `idf.py set-target esp32-s3`
+
+### Flash Compiled Binary
+
+1. Under Run / Debug Configurations in the top right corner, select Flash.
+2. Build the configuration
+
+### Flash and Monitor
+1. Configuration -> Edit
+2. Copy the 'flash' configuration by selecting it and clicking Copy Configuration (Ctrl + D)
+3. Name: flash_and_monitor
+4. Executable: C:\path\to\project\flash_and_monitor.bat
+5. Open C:\path\to\project\flash_and_monitor.bat and insert the absoulte path to idf.py
+6. Program arguments: monitor -p <COM PORT>
+7. Working directory: C:\path\to\project
+8. Environment variables: IDF_PATH=C:\path\to\esp-idf
+9. Check 'Emulate terminal in the output console'.
+10. Press the Play button to flash and monitor.
 
 ## Install ESP-IDF
 

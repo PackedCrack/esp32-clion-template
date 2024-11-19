@@ -1,0 +1,1 @@
+python <absolute\path\to\idf.py> %*

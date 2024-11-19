@@ -7,3 +7,4 @@ cmake-build-release-xtensa-esp32
 
 dependencies.lock
 sdkconfig
+sdkconfig.old
