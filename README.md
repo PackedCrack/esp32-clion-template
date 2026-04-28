@@ -43,7 +43,7 @@ If you don't have ESP-IDF installed see [Install ESP-IDF](#install-esp-idf)
 2. Copy the 'flash' configuration by selecting it and clicking Copy Configuration (Ctrl + D)
 3. Name: flash_and_monitor
 4. Executable: \esp32-cpp-template\flash_and_monitor.bat
-5. Program arguments: monitor -p <COM PORT>
+5. Program arguments: monitor -p \<COM PORT>
 6. Working directory: \esp32-cpp-template\
 7. Environment variables: IDF_PATH=C:\path\to\esp-idf
 8. Check 'Emulate terminal in the output console'.
